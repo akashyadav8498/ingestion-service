@@ -1,4 +1,4 @@
 mqtt:
-  ca-cert-path: C:/Users/sw/Desktop/Documents/Unofficial/aws/iot_core/certs/new/AmazonRootCA1.pem
-  client-cert-path: C:/Users/sw/Desktop/Documents/Unofficial/aws/iot_core/certs/new/device-certificate.pem.crt
-  client-key-path: C:/Users/sw/Desktop/Documents/Unofficial/aws/iot_core/certs/new/private.pem.key
+  ca-cert-path: /home/resources/aws/prepaid_meter_solution/iot_core/AmazonRootCA1.pem
+  client-cert-path: /home/resources/aws/prepaid_meter_solution/iot_core/device-certificate.pem.crt
+  client-key-path: /home/resources/aws/prepaid_meter_solution/iot_core/private.pem.key
