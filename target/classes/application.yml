@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────
+#  Ingestion Service – configuration
+# ─────────────────────────────────────────────
+
+mqtt:
+  broker-url: ssl://a294hkqqgifcaq-ats.iot.ap-south-1.amazonaws.com:8883
+  client-id: ingestion-service-client
+  subscribe-topic: esp32_pub                           
+
+  # TLS certificates for AWS IoT Core (paths to local files)
+  ca-cert-path: C:/Users/sw/Desktop/Documents/Unofficial/aws/iot_core/certs/new/AmazonRootCA1.pem
+  client-cert-path: C:/Users/sw/Desktop/Documents/Unofficial/aws/iot_core/certs/new/device-certificate.pem.crt
+  client-key-path: C:/Users/sw/Desktop/Documents/Unofficial/aws/iot_core/certs/new/private.pem.key
+
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+  main-queue: device.data.queue     # incoming device messages
+  log-queue: device.log.queue       # audit / log events
+
+spring:
+  rabbitmq:
+    host: ${rabbitmq.host}
+    port: ${rabbitmq.port}
+    username: ${rabbitmq.username}
+    password: ${rabbitmq.password}

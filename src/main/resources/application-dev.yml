@@ -1,0 +1,4 @@
+mqtt:
+  ca-cert-path: C:/Users/sw/Desktop/Documents/Unofficial/aws/iot_core/certs/new/AmazonRootCA1.pem
+  client-cert-path: C:/Users/sw/Desktop/Documents/Unofficial/aws/iot_core/certs/new/device-certificate.pem.crt
+  client-key-path: C:/Users/sw/Desktop/Documents/Unofficial/aws/iot_core/certs/new/private.pem.key
